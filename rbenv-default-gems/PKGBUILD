@@ -19,7 +19,7 @@ build() {
 package() {
     cd $srcdir
 
-    mkdir -p $pkgdir/usr/lib/rbenv/rbenv.d/install
+    mkdir -p $pkgdir/etc/rbenv.d/install
 
-    install -m 644 ./etc/rbenv.d/install/default-gems.bash $pkgdir/usr/lib/rbenv/rbenv.d/install/
+    install -m 644 ./etc/rbenv.d/install/default-gems.bash $pkgdir/etc/rbenv.d/install/
 }
