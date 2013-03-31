@@ -10,6 +10,7 @@ license=('MIT')
 depends=()
 optdepends=('ruby-build')
 conflicts=('rbenv-git')
+install="rbenv.install"
 source=("https://github.com/sstephenson/rbenv/tarball/v${pkgver}")
 noextract=("v${pkgver}")
 md5sums=('c1cf110b256cdab1c44e41020b57b489')
