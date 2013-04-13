@@ -4,14 +4,15 @@ pkgname=rbenv
 pkgver=0.4.0
 pkgrel=1
 pkgdesc="Simple Ruby version manager"
-url="https://github.com/sstephenson/rbenv"
 arch=('any')
+url="https://github.com/sstephenson/rbenv"
 license=('MIT')
-depends=('ruby')
+depends=()
 optdepends=('ruby-build')
 conflicts=('rbenv-git')
-noextract=("v${pkgver}")
+install="rbenv.install"
 source=("https://github.com/sstephenson/rbenv/tarball/v${pkgver}")
+noextract=("v${pkgver}")
 md5sums=('c1cf110b256cdab1c44e41020b57b489')
 
 build() {
