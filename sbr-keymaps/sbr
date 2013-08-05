@@ -1,0 +1,23 @@
+// based on a keyboard map from an 'xkb/symbols/sbr' file
+
+// Author   : Vincent Demeester
+// Licence  : X11
+//
+// Bepo retravaillé
+partial alphanumeric_keys
+xkb_symbols "bepo" {
+    include "fr(bepo)"
+
+    name[Group1]="French (Bepo-sbr, ergonomic, Dvorak way, latin-9 only)";
+    
+    key <AE02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [         less,            2,           guillemotleft,  leftdoublequotemark ] }; // « 2 < “
+    key <AE03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       greater,            3,          guillemotright, rightdoublequotemark ] }; // » 3 > ”
+    key <AD05> { [ w, W, dead_breve, VoidSymbol ] };
+    key <AD06> { [ dead_grave, exclam, VoidSymbol, exclamdown ] };
+    key <AD11> { [ dead_circumflex, dead_caron, schwa, SCHWA ] };
+    key <AD12> { [ dead_diaeresis, dead_abovedot, dead_breve, VoidSymbol] };
+    key <AC02> { [ u, U, bracketleft, Ugrave] }; // u U [ Ù
+    key <AC03> { [ i, I, bracketright, dead_abovedot ] }; // i I ] ˙
+    key <AB01> { [ z, Z, backslash, rightsinglequotemark] };
+};
+
