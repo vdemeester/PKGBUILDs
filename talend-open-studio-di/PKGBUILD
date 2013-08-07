@@ -1,11 +1,12 @@
 # Maintainer: Sizhao LIU <sizhaoliu@talend.com>
+# Credits: vdemeester 
 
 pkgname="talend-open-studio-di"
 _altname="Talend Open Studio for Data Integration"
 _shortname="TOS_DI"
 _altshortname="tos"
-pkgver="5.2.2"
-_build="r99271"
+pkgver="5.3.1"
+_build="r104014"
 pkgrel=1
 pkgdesc="Open-source data integration software from Talend."
 arch=('i686' 'x86_64')
@@ -16,12 +17,12 @@ options=("!strip")
 
 # Choose your prefered site, default value is US.
 _hostsite=("http://talend.dreamhosters.com") # US server
-#_hostsite=("http://sd-10673.dedibox.fr") # Europe server
+#_hostsite=("http://download-mirror1.talend.com") # Europe server
 
-source=("${_hostsite}/${_altshortname}/release/V${pkgver}/${_shortname}-${_build}-V${pkgver}.zip" 
+source=("${_hostsite}/tos/release/V${pkgver}/${_shortname}-${_build}-V${pkgver}.zip" 
 	"${_shortname// /}.desktop")
-md5sums=("c925c0f2325432e7c37c0cb439f41358"
-	"2ed66cdb0d249515066cdd65fb5b5384")
+md5sums=("3aa7964dea601ab0c3415b1a6875da73"
+	"de3bd58222a925ce962bad734174db79")
 
 build(){
 	
