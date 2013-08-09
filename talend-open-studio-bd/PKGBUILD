@@ -1,14 +1,14 @@
-# Maintainer: Sizhao LIU <sizhaoliu@talend.com>
-# Credits: vdemeester 
+# Maintainer: Vincent Demeester <vincent@sbr.io>
+# Contributor: Sizhao LIU <sizhaoliu@talend.com>
 
-pkgname="talend-open-studio-di"
-_altname="Talend Open Studio for Data Integration"
-_shortname="TOS_DI"
+pkgname="talend-open-studio-bd"
+_altname="Talend Open Studio for Big Data"
+_shortname="TOS_BD"
 _altshortname="tos"
 pkgver="5.3.1"
 _build="r104014"
 pkgrel=1
-pkgdesc="Open-source data integration software from Talend."
+pkgdesc="Open-source Big Data software from Talend."
 arch=('i686' 'x86_64')
 url=("http://www.talend.com")
 license=("GPL2")
@@ -18,11 +18,11 @@ options=("!strip")
 # Choose your prefered site, default value is US.
 _hostsite=("http://talend.dreamhosters.com") # US server
 #_hostsite=("http://download-mirror1.talend.com") # Europe server
-
-source=("${_hostsite}/tos/release/V${pkgver}/${_shortname}-${_build}-V${pkgver}.zip" 
+# http://talend.dreamhosters.com/tosbd/release/V5.3.1/TOS_BD-r104014-V5.3.1.zip
+source=("${_hostsite}/tosbd/release/V${pkgver}/${_shortname}-${_build}-V${pkgver}.zip" 
 	"${_shortname// /}.desktop")
-md5sums=("3aa7964dea601ab0c3415b1a6875da73"
-	"de3bd58222a925ce962bad734174db79")
+md5sums=("a0ee44c742592011fc7b810edc4fd3a9"
+	"09335b2e46fcd527e11d64d8416e2342")
 
 build(){
 	
