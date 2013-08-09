@@ -1,0 +1,21 @@
+# Maintainer: Vincent Demeester <vincent@sbr.io>
+pkgname='sbr-keymaps'
+pkgver='0.1'
+pkgrel=1
+pkgdesc='sbr keymaps for the Xorg'
+arch=('any')
+url='http://shortbrain.org/project/sbr-keymaps'
+license=('CCPL:cc-by-sa')
+groups=('sbr')
+#install=('bepo-keymaps.install')
+source=("http://pkg.sbr.io/generic/sbr-0.1")
+md5sums=('3189f92d0180c4689709fdf2f755d83c')
+
+build() {
+  destdir="${pkgdir}/usr/share/X11/xkb/symbols/"
+  mkdir -p ${destdir}
+
+  install -m 644 sbr-0.1 $destdir/sbr
+}
+
+# vim:set ts=2 sw=2 et:
