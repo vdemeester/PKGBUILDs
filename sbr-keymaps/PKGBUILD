@@ -1,14 +1,13 @@
 # Maintainer: Vincent Demeester <vincent@sbr.io>
 pkgname='sbr-keymaps'
 pkgver='0.1'
-pkgrel=1
+pkgrel=3
 pkgdesc='sbr keymaps for the Xorg'
 arch=('any')
 url='http://shortbrain.org/project/sbr-keymaps'
 license=('CCPL:cc-by-sa')
 groups=('sbr')
-#install=('bepo-keymaps.install')
-source=("http://pkg.sbr.io/generic/sbr-0.1")
+source=("http://files.sbr.io/sbr-0.1")
 md5sums=('3189f92d0180c4689709fdf2f755d83c')
 
 build() {
