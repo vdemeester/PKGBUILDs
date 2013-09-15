@@ -1,0 +1,21 @@
+# Maintainer: Vincent Demeester <vincent@sbr.io>
+pkgname='vde-etc'
+pkgver='0.2'
+pkgrel=1
+pkgdesc='Personal etc configuration (common)'
+arch=('any')
+url='http://shortbrain.org/project/etc-config-package'
+license=('CCPL:cc-by-sa')
+depends=('xorg-server')
+groups=('sbr')
+source=("http://files.sbr.io/pkg/vde-etc/10-keyboard.conf")
+md5sums=('0a81f5c8afe5be3e499dca2bcb11835f')
+
+build() {
+  destdir="${pkgdir}/etc/X11/xorg.conf.d/"
+  mkdir -p ${destdir}
+
+  install -m 644 10-keyboard.conf $destdir/
+}
+
+# vim:set ts=2 sw=2 et:
