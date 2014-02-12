@@ -5,8 +5,8 @@ pkgname="talend-open-studio-di"
 _altname="Talend Open Studio for Data Integration"
 _shortname="TOS_DI"
 _altshortname="tos"
-pkgver="5.3.1"
-_build="r104014"
+pkgver="5.4.1"
+_build="r111943"
 pkgrel=1
 pkgdesc="Open-source data integration software from Talend."
 arch=('i686' 'x86_64')
@@ -21,7 +21,7 @@ _hostsite=("http://talend.dreamhosters.com") # US server
 
 source=("${_hostsite}/tos/release/V${pkgver}/${_shortname}-${_build}-V${pkgver}.zip" 
 	"${_shortname// /}.desktop")
-md5sums=("3aa7964dea601ab0c3415b1a6875da73"
+md5sums=("8a3041fe70c4c90f23b9bc64d2e0b3d9"
 	"de3bd58222a925ce962bad734174db79")
 
 build(){
