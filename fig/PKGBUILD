@@ -12,7 +12,7 @@ source=(https://pypi.python.org/packages/source/f/fig/fig-$pkgver.tar.gz)
 md5sums=(986f8121f714e29d8173345bf6834407)
 
 url="http://orchardup.github.io/fig/"
-lincense="BSD"
+license="BSD"
 
 build() {
     cd $srcdir/$pkgname-$pkgver
