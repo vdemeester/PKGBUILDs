@@ -6,7 +6,7 @@ pkgdesc="rc file (dotfile) management"
 arch=('any')
 url="https://github.com/mike-burns/rcm"
 license=('BSD')
-makedepends=('unzip')
+makedepends=('base-devel', 'unzip')
 source=($url/archive/v${pkgver}.zip)
 md5sums=('387dce7b9ede8821a69718209fa61a2e')
 
