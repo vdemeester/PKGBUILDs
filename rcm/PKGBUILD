@@ -1,4 +1,5 @@
-# Maintainer: Pat Brisbin <pbrisbin@gmail.com>
+# Maintainer: Vincent Demeester <vincent@sbr.pm>
+# Contributor: Pat Brisbin <pbrisbin@gmail.com>
 pkgname=rcm
 pkgver=1.2.1
 pkgrel=1
