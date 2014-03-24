@@ -1,9 +1,8 @@
-# Maintainer: Vladimir Chizhov <jagoterr@gmail.com>
-# Contributor: Jochen Schalanda <jochen+aur (-AT-) schalanda.name>
+# Maintainer: Vincent Demeester <vincent@sbr.pm>
 pkgname=jenv
 pkgver=0.2.0
 pkgver_plus=20140322
-pkgrel=1
+pkgrel=2
 pkgdesc="Manage your Java environment"
 arch=('any')
 url="https://github.com/gcuisinier/jenv"
