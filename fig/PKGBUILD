@@ -1,4 +1,5 @@
 # Maintainer: Vincent Demeester <vincent@sbr.io>
+# Contributor: Josh VanderLinden <arch@cloudlery.com>
 python=python2
 
 pkgname=fig
@@ -17,7 +18,16 @@ license="BSD"
 
 build() {
     cd $srcdir/$pkgname-$pkgver
+
+    sed -i 's/==/>=/g' requirements.txt
+
     $python setup.py build || return 1
+}
+
+package() {
+    cd $srcdir/$pkgname-$pkgver
+
     $python setup.py install --root=$pkgdir
-    # TODO others ?
+
+    install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname/LICENSE
 }
