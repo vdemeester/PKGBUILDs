@@ -1,13 +1,13 @@
 # Maintainer: Vincent Demeester <vincent@sbr.io>
 pkgname='sbr-keymaps'
 pkgver='0.1'
-pkgrel=4
+pkgrel=5
 pkgdesc='sbr keymaps for the Xorg'
 arch=('any')
 url='http://shortbrain.org/project/sbr-keymaps'
 license=('CCPL:cc-by-sa')
 groups=('sbr')
-source=("http://files.sbr.io/pkg/sbr-keymaps/sbr-0.1")
+source=("http://files.sbr.pm/pkg/sbr-keymaps/sbr-0.1")
 md5sums=('3189f92d0180c4689709fdf2f755d83c')
 
 build() {
