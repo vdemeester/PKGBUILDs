@@ -13,9 +13,9 @@ source=(
   'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-background.png'
   'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-panel.png'
 )
-md5sums=('618207f281b153073c8670c73023eb83'
-         'f2006dc27a21d5e75a470ee873657646'
-         '57e20a15df2dfa38a82e49ae1b335dad'
+md5sums=('b0f51a38decc1c71c4f0ec7e0a30c1f8'
+         'd2d718e91fd9111febc78cf343fc1e80'
+         'e49b2830e84ae9d15852aa24cae19a5e'
          'f9d149bd172318e2e577678d7bbc894d')
 
 
