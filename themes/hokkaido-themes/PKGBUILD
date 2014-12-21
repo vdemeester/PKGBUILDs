@@ -1,0 +1,41 @@
+# $Id: pkgbuild-mode.el,v 1.23 2007/10/20 16:02:14 juergen Exp $
+# Maintainer: Vincent Demeester <vincent@sbr.pm>
+pkgname=hokkaido-themes
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Customized themes for my hokkaido machine (slim, grub, ..)"
+arch=('any')
+url="http://github.com/vdemeester/PKGBuilds/"
+license=('GPLv3')
+source=(
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/utgard-themes/grub-background.jpg'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-slim.theme'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-background.png'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-panel.png'
+)
+md5sums=('618207f281b153073c8670c73023eb83'
+         'f2006dc27a21d5e75a470ee873657646'
+         '57e20a15df2dfa38a82e49ae1b335dad'
+         'f9d149bd172318e2e577678d7bbc894d')
+
+
+build() {
+  cd $srcdir
+}
+
+package() {
+  cd $srcdir
+
+  mkdir -p $pkgdir/usr/share/themes/hokkaido/slim
+  mkdir -p $pkgdir/usr/share/themes/hokkaido/grub
+  mkdir -p $pkgdir/usr/share/slim/themes
+
+  install -m 644 ./grub-background.jpg $pkgdir/usr/share/themes/hokkaido/grub/background.jpg
+  install -m 644 ./slim-slim.theme $pkgdir/usr/share/themes/hokkaido/slim/slim.theme
+  install -m 644 ./slim-background.png $pkgdir/usr/share/themes/hokkaido/slim/background.png
+  install -m 644 ./slim-panel.png $pkgdir/usr/share/themes/hokkaido/slim/panel.png
+
+  ln -s /usr/share/themes/hokkaido/slim $pkgdir/usr/share/slim/themes/hokkaido
+}
+
+# vim:set ts=2 sw=2 et:
