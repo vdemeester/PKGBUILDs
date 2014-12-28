@@ -1,0 +1,42 @@
+st
+# $Id: pkgbuild-mode.el,v 1.23 2007/10/20 16:02:14 juergen Exp $
+# Maintainer: Vincent Demeester <vincent@sbr.pm>
+pkgname=honshu-themes
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Customized themes for my honshu machine (slim, grub, ..)"
+arch=('any')
+url="http://github.com/vdemeester/PKGBuilds/"
+license=('GPLv3')
+source=(
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/honshu-themes/grub-background.jpg'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/honshu-themes/slim-slim.theme'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/honshu-themes/slim-background.png'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/honshu-themes/slim-panel.png'
+)
+md5sums=('6ea1532dd84afc58aaf6928c92522f4d'
+         '11eeb80c185a920f19584b93dc9b703a'
+         'f4a49e927b3ae32c2ea0df6e2e3b6f24'
+         'f9d149bd172318e2e577678d7bbc894d')
+
+
+build() {
+  cd $srcdir
+}
+
+package() {
+  cd $srcdir
+
+  mkdir -p $pkgdir/usr/share/themes/honshu/slim
+  mkdir -p $pkgdir/usr/share/themes/honshu/grub
+  mkdir -p $pkgdir/usr/share/slim/themes
+
+  install -m 644 ./grub-background.jpg $pkgdir/usr/share/themes/honshu/grub/background.jpg
+  install -m 644 ./slim-slim.theme $pkgdir/usr/share/themes/honshu/slim/slim.theme
+  install -m 644 ./slim-background.png $pkgdir/usr/share/themes/honshu/slim/background.png
+  install -m 644 ./slim-panel.png $pkgdir/usr/share/themes/honshu/slim/panel.png
+
+  ln -s /usr/share/themes/honshu/slim $pkgdir/usr/share/slim/themes/honshu
+}
+
+# vim:set ts=2 sw=2 et:
