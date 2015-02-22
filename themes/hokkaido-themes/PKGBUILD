@@ -8,7 +8,7 @@ arch=('any')
 url="http://github.com/vdemeester/PKGBuilds/"
 license=('GPLv3')
 source=(
-  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/utgard-themes/grub-background.jpg'
+  'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/grub-background.jpg'
   'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-slim.theme'
   'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-background.png'
   'https://raw.githubusercontent.com/vdemeester/PKGBUILDs/master/themes/hokkaido-themes/slim-panel.png'
