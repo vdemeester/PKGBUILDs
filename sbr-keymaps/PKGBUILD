@@ -7,14 +7,14 @@ arch=('any')
 url='http://shortbrain.org/project/sbr-keymaps'
 license=('CCPL:cc-by-sa')
 groups=('sbr')
-source=("http://files.sbr.pm/pkg/sbr-keymaps/sbr-0.1")
+source=("sbr")
 md5sums=('3189f92d0180c4689709fdf2f755d83c')
 
-build() {
+package() {
   destdir="${pkgdir}/usr/share/X11/xkb/symbols/"
   mkdir -p ${destdir}
 
-  install -m 644 sbr-0.1 $destdir/sbr
+  install -m 644 sbr $destdir/sbr
 }
 
 # vim:set ts=2 sw=2 et:
