@@ -17,4 +17,4 @@ package() {
   install -m 644 sbr $destdir/sbr
 }
 
-# vim:set ts=2 sw=2 et:
+# vim:set ts=2 sw=2 qqqet:
